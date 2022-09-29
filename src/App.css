@@ -1,0 +1,106 @@
+
+
+
+body {
+  background: rgb(25, 25, 25);
+  margin: 0;
+  padding: 0;
+  color: rgb(220, 220, 220);
+  font-size: 14px;
+}
+
+.App {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.container {
+  display: flex;
+}
+
+.days {
+  margin: 0.5rem 0;
+}
+
+.days > div {
+  width: 100%;
+  text-align: center;
+  padding: 0 auto;
+  color: rgb(100, 100, 100);
+}
+
+.empty {
+  flex-grow: 1;
+}
+
+.calendar {
+  border-left: rgb(45, 45, 45) 1px solid;
+  border-top: rgb(45, 45, 45) 1px solid;
+}
+
+.week > div {
+  border-right: rgb(45, 45, 45) 1px solid;
+  border-bottom: rgb(45, 45, 45) 1px solid;
+  height: 90px;
+  width: 100%;
+  position: relative;
+}
+
+.week > div:nth-child(1){
+  color : rgb(235, 120, 120);
+  background-color: rgb(32, 32, 32);
+}
+.week > div:nth-child(7) {
+  color : rgb(120, 120, 235);
+  background-color: rgb(32, 32, 32);
+}
+
+.day {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  top: 30px;
+  left: 5%;
+  padding: 2px;
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 4px;
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: rgb(45, 45, 45);
+  box-shadow: 0 0 2px rgb(15, 15, 15);
+}
+.publicHolyday{
+  color: rgb(255, 0, 0);
+}
+
+.today {
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  background: rgb(0, 190, 0);
+}
+
+.notFocus {
+  color: rgb(100, 100, 100);
+}
+
+.btn {
+  padding: 0 0.5em;
+  user-select: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: rgb(40, 40, 40);
+}
+
+.btn:active {
+  background: rgb(60, 60, 60);
+}
